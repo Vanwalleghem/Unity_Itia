@@ -28,6 +28,9 @@ public class DataPlotter : MonoBehaviour {
 	public GameObject MagentaSphere;
 	public GameObject CyanSphere;
 
+	//Will hold the instantiated prefabs
+	public GameObject PointHolder;
+
 	// Use this for initialization
 	void Start () {
 
@@ -60,20 +63,28 @@ public class DataPlotter : MonoBehaviour {
 			float x = System.Convert.ToSingle(pointList[i][xName]);
 			float y = System.Convert.ToSingle(pointList[i][yName]);
 			float z = System.Convert.ToSingle(pointList[i][zName]);
-
+			GameObject dataPoint = null;
 			//instantiate the prefab with coordinates defined above
 			if (System.Convert.ToSingle(pointList[i][cName])==1)
 				{
-				Instantiate(GreenSphere, new Vector3(x, y, z), Quaternion.identity);
+				dataPoint = Instantiate(GreenSphere, new Vector3(x, y, z), Quaternion.identity);
 				}
 			else if (System.Convert.ToSingle(pointList[i][cName])==2)
 					{
-				Instantiate(MagentaSphere, new Vector3(x, y, z), Quaternion.identity);
+				dataPoint = Instantiate(MagentaSphere, new Vector3(x, y, z), Quaternion.identity);
 				}
 			else if (System.Convert.ToSingle(pointList[i][cName])==3)
 						{
-				Instantiate(CyanSphere, new Vector3(x, y, z), Quaternion.identity);			
+				dataPoint = Instantiate(CyanSphere, new Vector3(x, y, z), Quaternion.identity);			
 				}
+
+			//Make child of PointHolder
+			dataPoint.transform.parent = PointHolder.transform;
+
+			//Make clone name with xyz
+			string dataPointName = pointList[i][xName] + " " + pointList[i][yName] + " " + pointList[i][zName] + " " + pointList[i][cName];
+			dataPoint.transform.name = dataPointName;
+
 		}
 	}
 
