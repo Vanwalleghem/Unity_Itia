@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 9065675}
   - component: {fileID: 9065679}
   - component: {fileID: 9065680}
+  - component: {fileID: 9065681}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -139,14 +140,14 @@ AudioListener:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 9065674}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!124 &9065676
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 9065674}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &9065677
 Camera:
   m_ObjectHideFlags: 0
@@ -225,6 +226,67 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 884032310}
+  Tectum_points: {fileID: 0}
+--- !u!114 &9065681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 9065674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a84822fcb51dee4baf853cf574d0dc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  folder: AllBrainRegions
+  frameRate: 25
+  sizeMultiplier: 1
+--- !u!1 &303514169
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 303514171}
+  - component: {fileID: 303514170}
+  m_Layer: 0
+  m_Name: Semi_points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &303514170
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 303514169}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!4 &303514171
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 303514169}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &451538895
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,7 +319,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 3facab3093d88b24aaa36241253ec508, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -321,7 +383,7 @@ GameObject:
   - component: {fileID: 514940541}
   - component: {fileID: 514940540}
   m_Layer: 0
-  m_Name: Plotter (7)
+  m_Name: Semicircularis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -352,7 +414,7 @@ MonoBehaviour:
   MagentaSphere: {fileID: 1973823442486392, guid: 1e366b1ca19f8e947a2910542bebfa27,
     type: 2}
   CyanSphere: {fileID: 1137992639728824, guid: c52d21c9528e14a4c982ae450a976f15, type: 2}
-  PointHolder: {fileID: 1317287999}
+  PointHolder: {fileID: 303514169}
 --- !u!4 &514940541
 Transform:
   m_ObjectHideFlags: 0
@@ -366,6 +428,71 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &621499364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 621499367}
+  - component: {fileID: 621499366}
+  - component: {fileID: 621499365}
+  m_Layer: 0
+  m_Name: Cereb_points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &621499365
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 621499364}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!320 &621499366
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 621499364}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: bcc7484d9a41fc54496af50ec1727cb0, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 114551085698950532, guid: bcc7484d9a41fc54496af50ec1727cb0, type: 2}
+    value: {fileID: 621499364}
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &621499367
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 621499364}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &733807660
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,7 +503,7 @@ GameObject:
   - component: {fileID: 733807662}
   - component: {fileID: 733807661}
   m_Layer: 0
-  m_Name: Plotter
+  m_Name: Telencephalon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -438,7 +565,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05288df97e0f9cf4b893c3ef231be581, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 140
+      value: 135
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 05288df97e0f9cf4b893c3ef231be581, type: 3}
       propertyPath: m_LocalRotation.x
@@ -495,6 +622,120 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 05288df97e0f9cf4b893c3ef231be581, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &747173772
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 747173774}
+  - component: {fileID: 747173773}
+  - component: {fileID: 747173775}
+  m_Layer: 0
+  m_Name: Tectum_points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &747173773
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 747173772}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!4 &747173774
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 747173772}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &747173775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 747173772}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aae9e378a6353d34d8bb993ddb330491, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifetime: 5
+--- !u!1 &853230584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 853230586}
+  - component: {fileID: 853230585}
+  m_Layer: 0
+  m_Name: Tegmentum
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &853230585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 853230584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 442d232c4ba64eb48a98a43dabbdff28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputfile: Tegmentum
+  columnX: 0
+  columnY: 1
+  columnZ: 2
+  columnC: 3
+  xName: 
+  yName: 
+  zName: 
+  cName: 
+  GreenSphere: {fileID: 1267577810350672, guid: 456df2f9dc6041448b43c62378c84827,
+    type: 2}
+  MagentaSphere: {fileID: 1973823442486392, guid: 1e366b1ca19f8e947a2910542bebfa27,
+    type: 2}
+  CyanSphere: {fileID: 1137992639728824, guid: c52d21c9528e14a4c982ae450a976f15, type: 2}
+  PointHolder: {fileID: 1299948794}
+--- !u!4 &853230586
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 853230584}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &859365985
 GameObject:
   m_ObjectHideFlags: 0
@@ -505,7 +746,7 @@ GameObject:
   - component: {fileID: 859365987}
   - component: {fileID: 859365986}
   m_Layer: 0
-  m_Name: Plotter (2)
+  m_Name: Thalamus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -536,7 +777,7 @@ MonoBehaviour:
   MagentaSphere: {fileID: 1973823442486392, guid: 1e366b1ca19f8e947a2910542bebfa27,
     type: 2}
   CyanSphere: {fileID: 1137992639728824, guid: c52d21c9528e14a4c982ae450a976f15, type: 2}
-  PointHolder: {fileID: 1317287999}
+  PointHolder: {fileID: 1582955516}
 --- !u!4 &859365987
 Transform:
   m_ObjectHideFlags: 0
@@ -572,7 +813,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 884032309}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 920, y: 306, z: 170}
+  m_LocalPosition: {x: 800, y: 306, z: 135}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -588,7 +829,7 @@ GameObject:
   - component: {fileID: 912007640}
   - component: {fileID: 912007639}
   m_Layer: 0
-  m_Name: Plotter (1)
+  m_Name: Cerebellum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -619,7 +860,7 @@ MonoBehaviour:
   MagentaSphere: {fileID: 1973823442486392, guid: 1e366b1ca19f8e947a2910542bebfa27,
     type: 2}
   CyanSphere: {fileID: 1137992639728824, guid: c52d21c9528e14a4c982ae450a976f15, type: 2}
-  PointHolder: {fileID: 1317287999}
+  PointHolder: {fileID: 621499364}
 --- !u!4 &912007640
 Transform:
   m_ObjectHideFlags: 0
@@ -643,7 +884,7 @@ GameObject:
   - component: {fileID: 1133861670}
   - component: {fileID: 1133861669}
   m_Layer: 0
-  m_Name: Plotter (3)
+  m_Name: Habenula
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -674,7 +915,7 @@ MonoBehaviour:
   MagentaSphere: {fileID: 1973823442486392, guid: 1e366b1ca19f8e947a2910542bebfa27,
     type: 2}
   CyanSphere: {fileID: 1137992639728824, guid: c52d21c9528e14a4c982ae450a976f15, type: 2}
-  PointHolder: {fileID: 1317287999}
+  PointHolder: {fileID: 1942447114}
 --- !u!4 &1133861670
 Transform:
   m_ObjectHideFlags: 0
@@ -688,6 +929,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1299948794
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1299948796}
+  - component: {fileID: 1299948795}
+  m_Layer: 0
+  m_Name: Tegmentum_points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &1299948795
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1299948794}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!4 &1299948796
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1299948794}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1317287999
 GameObject:
   m_ObjectHideFlags: 0
@@ -699,7 +986,7 @@ GameObject:
   - component: {fileID: 1317288002}
   - component: {fileID: 1317288001}
   m_Layer: 0
-  m_Name: PointHolder
+  m_Name: Telen_points
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -818,6 +1105,163 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: -45, z: 0}
+--- !u!1 &1542059713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1542059715}
+  - component: {fileID: 1542059714}
+  m_Layer: 0
+  m_Name: NucMLF_points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &1542059714
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1542059713}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!4 &1542059715
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1542059713}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1582955516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1582955519}
+  - component: {fileID: 1582955518}
+  - component: {fileID: 1582955517}
+  m_Layer: 0
+  m_Name: Thalamus_points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &1582955517
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1582955516}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!320 &1582955518
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1582955516}
+  m_Enabled: 0
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 0}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 114551085698950532, guid: bcc7484d9a41fc54496af50ec1727cb0, type: 2}
+    value: {fileID: 1582955516}
+  m_ExposedReferences:
+    m_References: []
+--- !u!4 &1582955519
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1582955516}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1661681893
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1661681895}
+  - component: {fileID: 1661681894}
+  m_Layer: 0
+  m_Name: Hind_points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &1661681894
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1661681893}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!4 &1661681895
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1661681893}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1746325498
 GameObject:
   m_ObjectHideFlags: 0
@@ -828,7 +1272,7 @@ GameObject:
   - component: {fileID: 1746325500}
   - component: {fileID: 1746325499}
   m_Layer: 0
-  m_Name: Plotter (6)
+  m_Name: Hindbrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -859,7 +1303,7 @@ MonoBehaviour:
   MagentaSphere: {fileID: 1973823442486392, guid: 1e366b1ca19f8e947a2910542bebfa27,
     type: 2}
   CyanSphere: {fileID: 1137992639728824, guid: c52d21c9528e14a4c982ae450a976f15, type: 2}
-  PointHolder: {fileID: 1317287999}
+  PointHolder: {fileID: 1661681893}
 --- !u!4 &1746325500
 Transform:
   m_ObjectHideFlags: 0
@@ -872,6 +1316,61 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1773318502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1773318504}
+  - component: {fileID: 1773318503}
+  m_Layer: 0
+  m_Name: Tectum
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1773318503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1773318502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 442d232c4ba64eb48a98a43dabbdff28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputfile: Tectum
+  columnX: 0
+  columnY: 1
+  columnZ: 2
+  columnC: 3
+  xName: 
+  yName: 
+  zName: 
+  cName: 
+  GreenSphere: {fileID: 1267577810350672, guid: 456df2f9dc6041448b43c62378c84827,
+    type: 2}
+  MagentaSphere: {fileID: 1973823442486392, guid: 1e366b1ca19f8e947a2910542bebfa27,
+    type: 2}
+  CyanSphere: {fileID: 1137992639728824, guid: c52d21c9528e14a4c982ae450a976f15, type: 2}
+  PointHolder: {fileID: 747173772}
+--- !u!4 &1773318504
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1773318502}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1850818050
 GameObject:
@@ -938,6 +1437,52 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -180, y: 45, z: 0}
+--- !u!1 &1942447114
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1942447116}
+  - component: {fileID: 1942447115}
+  m_Layer: 0
+  m_Name: Hab_points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &1942447115
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1942447114}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!4 &1942447116
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1942447114}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2080747445
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,7 +1493,7 @@ GameObject:
   - component: {fileID: 2080747447}
   - component: {fileID: 2080747446}
   m_Layer: 0
-  m_Name: Plotter (4)
+  m_Name: NucMLF
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -979,7 +1524,7 @@ MonoBehaviour:
   MagentaSphere: {fileID: 1973823442486392, guid: 1e366b1ca19f8e947a2910542bebfa27,
     type: 2}
   CyanSphere: {fileID: 1137992639728824, guid: c52d21c9528e14a4c982ae450a976f15, type: 2}
-  PointHolder: {fileID: 1317287999}
+  PointHolder: {fileID: 1542059713}
 --- !u!4 &2080747447
 Transform:
   m_ObjectHideFlags: 0

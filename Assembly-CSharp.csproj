@@ -53,8 +53,10 @@
   <ItemGroup>
      <Compile Include="Assets\CSVReader.cs" />
      <Compile Include="Assets\DataPlotter.cs" />
+     <Compile Include="Assets\DestroyByTime.cs" />
      <Compile Include="Assets\OrbitCamera.cs" />
      <Compile Include="Assets\ScreenRecorder.cs" />
+     <Compile Include="Assets\ScreenshotMovie.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

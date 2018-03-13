@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class OrbitCamera : MonoBehaviour {
 	public Transform target; //the target object
-	private float speedMod=50.0f; // speed modifier
+	public float speedMod=20.0f; // speed modifier
 	private Vector3 point; //coord point where camera looks
-
 
 	// Use this for initialization
 	void Start () {		
@@ -21,5 +20,12 @@ public class OrbitCamera : MonoBehaviour {
 	void Update () {		
 		//transform.Translate(Vector3.forward * Time.deltaTime * speedMod);
 		transform.RotateAround(point,Vector3.right,speedMod * Time.deltaTime);
+		if (speedMod * Time.deltaTime > 360) {
+			UnityEditor.EditorApplication.ExecuteMenuItem ("Edit/Play");
+		}
+		//var go = GameObject.Find("Cerebellum");
+		//go.renderer.material.color.a = .5;
 	}
+
+
 }
