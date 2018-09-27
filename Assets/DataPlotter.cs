@@ -62,7 +62,7 @@ public class DataPlotter : MonoBehaviour {
 			// Get value in poinList at ith "row", in "column" Name
 			float x = System.Convert.ToSingle(pointList[i][xName]);
 			float y = System.Convert.ToSingle(pointList[i][yName]);
-			float z = System.Convert.ToSingle(pointList[i][zName]);
+			float z = System.Convert.ToSingle(pointList[i][zName])*2;
 			GameObject dataPoint = null;
 			//instantiate the prefab with coordinates defined above
 			if (System.Convert.ToSingle(pointList[i][cName])==1)

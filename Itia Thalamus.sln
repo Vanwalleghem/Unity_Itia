@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itia Thalamus", "Assembly-CSharp.csproj", "{62F9FCA6-E0CA-069B-19A2-9A6F41B92AD3}"
 EndProject
 Global
